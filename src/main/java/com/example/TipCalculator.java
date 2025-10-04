@@ -14,7 +14,7 @@ public class TipCalculator {
         double totalBill = Math.round((bill + totalTip)*100.0)/100.0;
         double costPerPerson = Math.round((bill/people*100.0))/100.0;
         double tipPerPerson = Math.round((totalTip / people*100.0))/100.0;
-        double totalPerPerson = Math.floor((totalBill / people*100.0))/100.0;
+        double totalPerPerson = Math.round((totalBill / people*100.0))/100.0;
 
         String result = "-------------------------------\n" +
                        "Total bill before tip: $" + bill + "\n" +
