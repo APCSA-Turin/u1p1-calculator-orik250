@@ -81,14 +81,4 @@ public class TipCalculator {
         }
     
     
-     //TEST YOUR PROGRAM IN main
-     public static void main(String[] args) {
-        //try different values for people, percent, and cost to test your program before running test cases
-        int people=12; 
-        int percent=15;
-        double cost=566.97;              
-        //System.out.println(calculateTip(people,percent,cost));
-        System.out.println(extraCredit(people, percent, cost));
-    }
-}
-        
+
