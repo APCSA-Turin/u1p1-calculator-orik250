@@ -14,7 +14,7 @@ public class TipCalculator {
         double totalBill = Math.round((bill + totalTip)*100.0)/100.0;
         double costPerPerson = Math.round((bill/people*100.0))/100.0;
         double tipPerPerson = Math.round((totalTip / people*100.0))/100.0;
-        double totalPerPerson = Math.floor((totalBill / people*100.0))/100.0;
+        double totalPerPerson = Math.round((totalBill / people*100.0))/100.0;
 
         String result = "-------------------------------\n" +
                        "Total bill before tip: $" + bill + "\n" +
@@ -84,9 +84,9 @@ public class TipCalculator {
      //TEST YOUR PROGRAM IN main
      public static void main(String[] args) {
         //try different values for people, percent, and cost to test your program before running test cases
-        int people=2; 
-        int percent=18;
-        double cost=5.99;              
+        int people=12; 
+        int percent=15;
+        double cost=566.97;              
         //System.out.println(calculateTip(people,percent,cost));
         System.out.println(extraCredit(people, percent, cost));
     }
