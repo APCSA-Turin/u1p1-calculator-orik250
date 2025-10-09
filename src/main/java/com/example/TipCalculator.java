@@ -77,8 +77,19 @@ public class TipCalculator {
             result+= items.get(i) + "\n";
         }
         result+= "-------------------------------\n";
+        scanner.close();
         return result;
         }
     
     
-
+     //TEST YOUR PROGRAM IN main
+     public static void main(String[] args) {
+        //try different values for people, percent, and cost to test your program before running test cases
+        int people=2; 
+        int percent=18;
+        double cost=5.99;              
+        //System.out.println(calculateTip(people,percent,cost));
+        System.out.println(extraCredit(people, percent, cost));
+    }
+}
+        
